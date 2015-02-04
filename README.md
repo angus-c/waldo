@@ -2,7 +2,7 @@
 
 ###Waldo
 
-I got frustrated trying to find objects in runtime object models – so I created a utility that does and that can be stored as a bookmark (see [Bookmarklet](http://en.wikipedia.org/wiki/Bookmarklet)).
+I got frustrated trying to find objects in runtime object models – so I created a utility that does and that can be stored as a bookmark (see Wikipeida: [Bookmarklet](http://en.wikipedia.org/wiki/Bookmarklet)).
 
 You search for objects using a find utility. Then you can click on the retrieved objects to inspect them.
 
