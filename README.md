@@ -26,6 +26,9 @@ find.byValue(1000);
 //all falsey values
 find.byValueCoerced(false);
 
+///all values coerced to string that contain a phrase
+find.byValueCoercedContains('Kingston')
+
 //search with a custom function
 //e.g. all truthy properties named 'a'...
 find.custom(function(searchTerm, obj, prop) {return (obj[prop] == true) && (prop == 'a')});
