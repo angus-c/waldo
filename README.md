@@ -2,7 +2,8 @@
 
 ###Waldo
 
-I got frustrated trying to find objects in runtime object models – so I created a utility to do it.
+I got frustrated trying to find objects in runtime object models – so I created a utility that does and that can be stored as a bookmark (see Wikipeida: [Bookmarklet](http://en.wikipedia.org/wiki/Bookmarklet)).
+
 You search for objects using a find utility. Then you can click on the retrieved objects to inspect them.
 
 e.g. in the console do this kind of thing
@@ -26,10 +27,20 @@ find.byValue(1000);
 //all falsey values
 find.byValueCoerced(false);
 
+///all values coerced to string that contain a phrase
+find.byValueCoercedContains('Kingston')
+
 //search with a custom function
 //e.g. all truthy properties named 'a'...
 find.custom(function(searchTerm, obj, prop) {return (obj[prop] == true) && (prop == 'a')});
 ```
+
+
+####Installation: Creating and using a bookmarklet
+
+In you favorite browser create a bookmark and as the page url paste the contents of `lib/find_min.js`. To use just select the bookmark while on target page and open up the JavaScript developer console - the utility will be accessible through the global `find` object. 
+
+
 ####circular references
 
 Waldo now detects circular references and cites them:  
