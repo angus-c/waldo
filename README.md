@@ -36,9 +36,9 @@ find.custom(function(searchTerm, obj, prop) {return (obj[prop] == true) && (prop
 ```
 
 
-####Creating and using a bookmarklet
+####Installation: Creating and using a bookmarklet
 
-In you favorite browser creat a bookmark and as the page url paste the contents of `lib/find_min.js`. To use just select the bookmark while on target page and open up the JavaScript developer console - the utility will be accessible through the `find` object. 
+In you favorite browser create a bookmark and as the page url paste the contents of `lib/find_min.js`. To use just select the bookmark while on target page and open up the JavaScript developer console - the utility will be accessible through the global `find` object. 
 
 
 ####circular references
